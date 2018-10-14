@@ -3,13 +3,52 @@
     border: 2px solid cornflowerblue;
     margin: 5px;
     padding: 3px;
-    }
+}
     /* body takes up full viewport and extends all the way to the edges. */
-    html, body {
+html, body {
     margin: 0;
     padding: 0;
-    border: none;
-    }
-    body {
+}
+
+body {
     height: 100vh;
-    }
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 64px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+     flex: 3;
+     font-size: 2em;
+}
+
+header > a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+main {
+    flex: 10;
+    display: flex;
+    justify-content: space-evenly;
+}
+    
+.main-article {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+}
